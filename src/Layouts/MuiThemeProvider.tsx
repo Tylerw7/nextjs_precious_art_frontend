@@ -1,9 +1,18 @@
 "use client";
 
+
+
+
 import { Box, CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 
 
+
+
+
+export default function MuiThemeProvider({ children }: { children: React.ReactNode }) {
+  
 const darkMode = false;
+
 const palleteType  = darkMode ? 'dark' : 'light'
 
 
@@ -16,7 +25,8 @@ const theme = createTheme({
   },
 });
 
-export default function MuiThemeProvider({ children }: { children: React.ReactNode }) {
+
+
   return <ThemeProvider theme={theme}>
     <CssBaseline />
     <Box

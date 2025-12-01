@@ -39,10 +39,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <MuiThemeProvider>
-        <NavBar />
+       
+        <NavBar /> 
         {children}
-        </MuiThemeProvider>
+        
       </body>
     </html>
   );
