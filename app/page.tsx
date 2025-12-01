@@ -38,7 +38,7 @@ const addProduct = () => {
 
   return (
     <>
-    <Container maxWidth='xl'>
+    <Container maxWidth='xl' sx={{mt: 14}}>
       <Box display='flex' justifyContent='center' gap={3} marginY={3}>
       <Typography variant="h4">Products</Typography>
       <Button variant="contained" onClick={addProduct}>Add Product</Button>

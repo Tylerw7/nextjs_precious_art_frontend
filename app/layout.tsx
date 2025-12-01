@@ -7,6 +7,12 @@ import '@fontsource/roboto/700.css';
 
 import "./globals.css";
 import NavBar from "@/src/Layouts/NavBar";
+import MuiThemeProvider from "@/src/Layouts/MuiThemeProvider";
+
+
+
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,8 +39,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <MuiThemeProvider>
         <NavBar />
         {children}
+        </MuiThemeProvider>
       </body>
     </html>
   );
