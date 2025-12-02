@@ -1,5 +1,6 @@
 import { Product } from "@/src/Types/product"
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
+import Link from "next/link"
 
 
 type Props = {
@@ -39,7 +40,7 @@ const ProductCard = ({product}: Props) => {
             sx={{justifyContent: 'space-between'}}
         >
             <Button>Add to cart</Button>
-            <Button>View</Button>
+            <Button><Link href={`/product-details/${product.id}`}>View</Link></Button>
         </CardActions>
     </Card>
   )
